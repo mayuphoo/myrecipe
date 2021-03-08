@@ -13,12 +13,12 @@
 
 
   ## postsテーブル 
-｜ Column     | Type       | Option      |
-｜ ---------  | ---------  | ----------  |
-｜ title      | string     | null: false |
-｜ body       | text       | null: false |
-｜ user       | references |             |
-｜ category   | integer    | null: false |★Active
+｜ Column     | Type       | Option            |
+｜ ---------  | ---------  | ----------        |
+｜ title      | string     | null: false       |
+｜ body       | text       | null: false       |
+｜ user       | references | foreign_key: true |
+｜ category   | integer    | null: false       | ★Active
 
  ### Association
 - belongs_to :user
