@@ -13,4 +13,8 @@ class Genre < ActiveHash::Base
     { id: 11, name: 'お菓子・スイーツ' }
   ]
 
+  include ActiveHash::Associations
+  has_many :posts
+
+
 end
