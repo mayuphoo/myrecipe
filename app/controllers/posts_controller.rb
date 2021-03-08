@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(posts_params)
+    @post = Post.new(post_params)
     if @post.save
       redirect_to root_path
     else
@@ -20,8 +20,22 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    post = Post.find(params[:id])
+    if post.update(post_params)
+      redirect_to post_path(params[:id])
+    else
+      @post = Post.find(params[:id])
+      render :edit
+    end
+  end
+
 private
-  def posts_params
+  def post_params
     params.require(:post).permit(:title, :body, :image).merge(user_id: current_user.id)
   end
 
