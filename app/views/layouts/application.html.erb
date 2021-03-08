@@ -15,8 +15,18 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-            <%= link_to image_tag("logo.png", class: :logo), root_path %>
+            <%= link_to image_tag("8.png", class: :logo), root_path %>
+            <%= link_to "カテゴリ一覧", root_path, class: :nav__logout %>
           </div>
+
+              <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+              <form method="get" action="#" class="search_container">
+                <input type="text" size="25" placeholder="キーワードを入力">
+                <input type="submit" value="&#xf002">
+              </form>
+
+
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
