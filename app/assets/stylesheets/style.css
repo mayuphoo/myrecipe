@@ -197,6 +197,27 @@ a {
   text-decoration: underline;
 }
 
+.tag{
+  position: relative;
+  display: inline-block;
+  padding: 0rem 5px 0rem 6px;
+  color: #fff;
+  border-radius: 100vh 0 0 100vh;
+  background: #fa4141;
+  font-size: 12px;
+}
+
+tag:before {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-radius: 50%;
+  background: #fff;
+}
+
 /* 詳細ページ */
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
@@ -302,6 +323,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
 /* フッター */
 
 .footer {
