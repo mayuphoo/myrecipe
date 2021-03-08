@@ -26,6 +26,10 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
+    unless @post.user_id == current_user.id
+      redirect_to action: :index
+    end
+
   end
 
   def update
