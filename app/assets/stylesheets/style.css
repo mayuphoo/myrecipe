@@ -84,39 +84,25 @@ a {
   opacity: 0.5;
 }
 
-.search_container{
-  box-sizing: border-box;
-  position: relative;
-  border: 1px solid #999;
-  padding: 3px 10px;
-  border-radius: 20px;
-  height: 2.3em;
-  width: 260px;
-  overflow: hidden;
+.nav__name{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.9em;
+  color: gray;
+  text-decoration: none;
+  user-select: none;
+
 }
-.search_container input[type="text"]{
-  border: none;
-  height: 2.0em;
-  background-color: cornsilk;
-  margin-left: 5px;
+
+.nav__name:hover{
+  opacity: 0.5;
 }
-.search_container input[type="text"]:focus {
-  outline: 0;
+
+.search_form{
+  margin-top: 5px;
 }
-.search_container input[type="submit"]{
-  cursor: pointer;
-  font-family: FontAwesome;
-  font-size: 1.3em;
-  border: none;
-  background: none;
-  color: #666666;
-  position: absolute;
-  width: 2.5em;
-  height: 2.5em;
-  right: 0;
-  top: -10px;
-  outline : none;
-}
+
+
 
 /* フォーム周り */
 .form__wrapper{

@@ -20,17 +20,18 @@
 
               <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-              <form method="get" action="#" class="search_container">
-                <input type="text" size="25" placeholder="キーワードを入力">
-                <input type="submit" value="&#xf002">
-              </form>
-
+              <%= form_tag(search_posts_path,:method => 'get',class: :search_form) do %>
+                <%= text_field_tag :search %>
+                <%= submit_tag '検索', :name => nil, class: :search_btn %>
+              <% end %>
+              
               <div class="nav__logout" id="lists">カテゴリで探す</div>
 
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
               <%= link_to "新規投稿", new_post_path, class: :nav__btn %>
+              <%= link_to "#{current_user.name}", user_path(current_user.id), class: :nav__name %>
             </div> 
           <% else %>
             <div class="nav__right">
