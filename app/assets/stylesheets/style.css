@@ -204,6 +204,32 @@ tag:before {
   background: #fff;
 }
 
+.show_tag{
+  position: relative;
+  display: inline-block;
+  padding: 0rem 5px 0rem 6px;
+  color: #fff;
+  border-radius: 100vh 0 0 100vh;
+  background: #fa4141;
+  font-size: 12px;
+  margin-left: 30%;
+}
+
+show_tag:before {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-radius: 50%;
+  background: #fff;
+}
+
+
+
+
+
 .show-lists{
   width: 200px;
   position: absolute;
