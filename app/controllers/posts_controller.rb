@@ -50,6 +50,10 @@ class PostsController < ApplicationController
     @posts = Post.where(category_id: params[:id]).order('created_at DESC')
   end
 
+  def search
+    #Viewのformで取得したパラメータをモデルに渡す
+    @posts = Post.search(params[:search])
+  end
   private
 
   def post_params

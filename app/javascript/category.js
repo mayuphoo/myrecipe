@@ -39,5 +39,4 @@ function pullDown() {
 
 }
 
-// setInterval(pullDown, 500);
-window.addEventListener('load',pullDown)
+setInterval(pullDown, 500);
