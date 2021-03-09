@@ -30,7 +30,7 @@
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-              <%= link_to "New Proto", new_post_path, class: :nav__btn %>
+              <%= link_to "新規投稿", new_post_path, class: :nav__btn %>
             </div> 
           <% else %>
             <div class="nav__right">
@@ -54,14 +54,14 @@
 
 
  <ul class="show-lists hidden" id="pull-down">
-        <li class="pull-down-list" id="pull-lists"><%= link_to 'お肉のおかず', 'root_path' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to '魚介のおかず', 'articles/genre/3' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to '野菜のおかず', 'articles/genre/4' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to 'ご飯もの', 'articles/genre/5' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to '卵料理', 'articles/genre/6' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to 'パスタ・グラタン', 'articles/genre/7' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to '麺類', 'articles/genre/8' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to '副菜・サラダ', 'articles/genre/9' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to '汁物・シチュー', 'articles/genre/10' %></li>
-        <li class="pull-down-list" id="pull-lists"><%= link_to 'お菓子・スイーツ', 'articles/genre/11' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'お肉のおかず', '/posts/category/2' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '魚介のおかず', '/posts/category/3' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '野菜のおかず', '/posts/category/4' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'ご飯もの', '/posts/category/5' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '卵料理', '/posts/category/6' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'パスタ・グラタン', '/posts/category/7' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '麺類', '/posts/category/8' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '副菜・サラダ', '/posts/category/9' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '汁物・シチュー', '/posts/category/10' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'お菓子・スイーツ', '/posts/category/11' %></li>
       </ul>
