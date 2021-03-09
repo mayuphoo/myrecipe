@@ -310,6 +310,40 @@ tag:before {
   text-decoration: underline;
 }
 
+/* カテゴリ一覧ページ */
+.category_card { 
+  width: calc((100% - 50px) / 3);
+  margin: 40px;
+} 
+
+.category_parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.category_child {
+  width: calc((100% - -180px) / 3);
+  margin-bottom: 30px;
+}
+
+
+.category_title{
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.no_category_card{
+  width: calc((100% - 50px) / 3);
+  margin: 40px;
+  display: flex;
+}
+
+.no_category{
+  text-align: center;
+  font-size: 20px;
+}
+
 /* ユーザーページ */
 .user__wrapper{
   min-height: calc(100vh - 161px);
@@ -340,6 +374,10 @@ tag:before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-heading{
+  margin-left: -30px;
 }
 
 /* フッター */

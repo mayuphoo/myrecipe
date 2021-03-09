@@ -1,0 +1,33 @@
+<% if @post != nil %>
+    <div class="category_card">
+      <div class= "category_title">
+        <%= @post.category.name %>   の投稿一覧
+      </div>
+      <div class="category_parent">
+        <% @posts.each do |post| %>
+          <div class="category_child">
+            <p class="tag"><%= post.category.name %></p>
+            <%= link_to image_tag(post.image, class: :card__img ), post_path(post.id) %>
+            <div class="card__body">
+              <%= link_to post.title, post_path(post.id), class: :card__title%>
+              <%= link_to "by #{post.user.name}", root_path, class: :card__user %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <button type="button" class="btn btn-outline-primary">
+        <%= link_to "ホームへ戻る", root_path %>
+      </button>
+    </div>
+<% else %>
+    <div class="no_category_card">
+      <div class="no_category">
+        投稿はありません。 
+      </div>
+        <div class="home_btn">
+          <button type="button" class="btn btn-outline-primary">
+            <%= link_to "ホームへ戻る", root_path %>
+          </button>
+        </div>
+    </div>
+<% end %>

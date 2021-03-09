@@ -45,6 +45,11 @@ class PostsController < ApplicationController
     end
   end
 
+  def category
+    @post = Post.find_by(category_id: params[:id])
+    @posts = Post.where(category_id: params[:id]).order('created_at DESC')
+  end
+
   private
 
   def post_params
