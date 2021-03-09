@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProtoSpace</title>
+    <title>Recipe blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,7 +16,6 @@
         <div class="nav">
           <div class="nav__left">
             <%= link_to image_tag("8.png", class: :logo), root_path %>
-            <%= link_to "カテゴリ一覧", root_path, class: :nav__logout %>
           </div>
 
               <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -26,6 +25,7 @@
                 <input type="submit" value="&#xf002">
               </form>
 
+              <div class="nav__logout" id="lists">カテゴリで探す</div>
 
           <% if user_signed_in? %>
             <div class="nav__right">
@@ -38,12 +38,30 @@
               <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
             </div>
           <% end %>
+          
         </div>
+        
       </div>
+
     </header>
+
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
+      <p class="copyright">Copyright © Recire blog All rights reserved.</p>
     </footer>
   </body>
 </html>
+
+
+ <ul class="show-lists hidden" id="pull-down">
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'お肉のおかず', 'root_path' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '魚介のおかず', 'articles/genre/3' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '野菜のおかず', 'articles/genre/4' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'ご飯もの', 'articles/genre/5' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '卵料理', 'articles/genre/6' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'パスタ・グラタン', 'articles/genre/7' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '麺類', 'articles/genre/8' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '副菜・サラダ', 'articles/genre/9' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to '汁物・シチュー', 'articles/genre/10' %></li>
+        <li class="pull-down-list" id="pull-lists"><%= link_to 'お菓子・スイーツ', 'articles/genre/11' %></li>
+      </ul>
