@@ -218,6 +218,24 @@ tag:before {
   background: #fff;
 }
 
+.show-lists{
+  width: 200px;
+  position: absolute;
+  right: 400px;
+  top: 80px;
+  background-color: #ffffff;
+}
+
+.pull-down-list{
+  padding: 10px 0px 5px 20px;
+  border: 1px solid #eee;
+  font-size: 13px;
+}
+
+.hidden{
+  display: none;
+}
+
 /* 詳細ページ */
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
