@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :post do
-    title          { 'りんご' }
+    title { 'りんご' }
     body { Faker::Lorem.sentence }
     user_id { Faker::Number.between(300, 9_999_999) }
     category_id { '3' }

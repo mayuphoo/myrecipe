@@ -183,6 +183,8 @@ a {
   text-decoration: underline;
 }
 
+
+
 .tag{
   position: relative;
   display: inline-block;
@@ -227,9 +229,6 @@ show_tag:before {
 }
 
 
-
-
-
 .show-lists{
   width: 200px;
   position: absolute;
@@ -246,6 +245,57 @@ show_tag:before {
 
 .hidden{
   display: none;
+}
+
+.post-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.created{
+  color: gray;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.show-bottom{
+  margin-left: 310px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-created{
+  margin-right: 310px;
+  color:gray;
+  font-size: 14px;
+}
+
+/* いいね */
+.like_group{
+  display:flex;
+}
+
+.like_btn{
+  width: 50px;
+  height: 33px;
+}
+
+
+.fa-heart:before {
+  font-size: 20px;
+}
+
+.fa-heart:before {
+  color: #c70909;
+}
+
+.count-number{
+  font-size: 18px;
+}
+
+.post-count-number{
+  margin-left: 5px;
+  margin-top: -1px;
 }
 
 /* 詳細ページ */
@@ -314,12 +364,24 @@ show_tag:before {
 .comments_list{
   list-style-type: square;
   padding-bottom: 5px;
+  display: flex;
 }
 
 .comment_user{
   font-size: 16px;
   color: #999;
   text-decoration: underline;
+  margin-left: 10px;
+}
+
+.comment_created{
+  margin: 5px 0px 0px 15px;
+  font-size: 12px;
+  color: gray;
+}
+
+.comment_form{
+  margin-left: 20px;
 }
 
 /* カテゴリ一覧ページ */
@@ -390,6 +452,12 @@ show_tag:before {
 
 .page-heading{
   margin-left: -30px;
+}
+
+.list-name{
+  border-bottom: dashed 2px #3b4043;
+  margin-bottom: 20px;
+  width: 300px;
 }
 
 /* フッター */
