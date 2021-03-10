@@ -23,6 +23,37 @@
         </div>
       </div>
 
+    <%# いいね部分始まり %>
+    <% if user_signed_in? %>
+      <% if current_user.already_liked?(@post) %>
+        <%= button_to post_like_path(@post), method: :delete,class: :like_btn do %> 
+          <div class="like_group">
+            <p class= "heart-icon">
+              <i class="fas fa-heart"></i>
+            </p>
+            <p class="count-number">
+              <%=@post.liked_users.count %>
+            </p>
+          </div>
+        <% end %>
+      <% else %> 
+        <%= button_to post_likes_path(@post),class: :like_btn do %> 
+         <div class="like_group">
+            <p class= "heart-icon">
+              <i class="far fa-heart"></i>
+            </p>
+            <p class="count-number">
+              <%=@post.liked_users.count %>
+            </p>
+          </div>
+        <% end %>
+      <% end %>
+    <% else %>
+      <span class="gray-heart"><i class="fas fa-heart"></i></span>
+    <% end %>
+    <%# いいね部分終わり %>
+
+      <%#コメント部分%>
       <div class="prototype__comments">
         <% if user_signed_in? %>
           <%=form_with model: [@post, @comment],local: true do |f|%>
@@ -44,6 +75,7 @@
           <% end %>
         </ul>
       </div>
+      <%#コメント部分終わり%>
 
     </div>
   </div>

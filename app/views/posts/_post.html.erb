@@ -3,6 +3,19 @@
   <%= link_to image_tag(post.image, class: :card__img ), post_path(post.id) %>
   <div class="card__body">
     <%= link_to post.title, post_path(post.id), class: :card__title%>
+
+  <%# いいね部分始まり %>
+  <div class="like_group">
+    <p class= "heart-icon">
+      <i class="fas fa-heart"></i>
+    </p>
+    <p class="post-count-number">
+      <%=post.liked_users.count %>
+    </p>
+  </div>
+  <%# いいね部分終わり %>
+
     <%= link_to "by #{post.user.name}", user_path(post.user_id), class: :card__user %>
   </div>
 </div>
+

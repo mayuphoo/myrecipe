@@ -13,31 +13,38 @@
 ・レシピの幅を広げられるアプリを作る目的。
 
 # DEMO
-◎ユーザー管理機能
+◎ ユーザー管理機能
 ユーザー登録/ログイン機能/ログアウト機能
 ・https://gyazo.com/2b37af0ac84a6ecf8ec1703b63d33b8d (ユーザー登録機能)
 ・https://gyazo.com/c718fe37e8ea8d2f5848d629a5acade9 (ログイン機能)
 ・https://gyazo.com/ac080b22a3fa3263a613007411683ccb (ログアウト機能)
 
-◎レシピ投稿機能
+◎ レシピ投稿機能
 新規投稿機能/編集機能/詳細表示機能/削除機能
 ・https://gyazo.com/38fadff60026ff37e912382096389607 (新規投稿機能)
 ・https://gyazo.com/07872c2a52a69bb1e43f53ece44d4188 (編集機能)
 ・https://gyazo.com/cc6d9f1f59c7995d9d679725f29bc7c5 (詳細表示機能)
 ・https://gyazo.com/bbbad6b3dd7f9d7d6e363b6376ad2ec9 (削除機能)
 
-◎ユーザー詳細機能(GIF添付)
+◎ ユーザー詳細機能
 ユーザー詳細ページにて、投稿済みの記事が一覧表示できる
 ・https://gyazo.com/6aa8ff2740a3e28edddf713f76a4b6c2
-◎コメント機能(GIF添付)
+
+◎ コメント機能
 投稿詳細ページにて、ユーザは自由にコメントができる
 ・https://gyazo.com/7542da238e26a72525b7803068ca9743
-◎カテゴリ表示機能
+
+◎ カテゴリ表示機能
 カテゴリ表示により、ユーザーは容易にレシピ検索ができる
 ・https://gyazo.com/b40c848baede9c9946918100d23dc2bd
-◎キーワード検索機能
+
+◎ キーワード検索機能
 検索窓からレシピ名のキーワード検索が可能
 ・https://gyazo.com/6355c98bc72bc22f682be6f9dcd7ced2
+
+◎いいね！機能
+お気に入りの投稿をマイページに保存して、いつでも見返すことができる
+・
 
 # 本番環境URL
 https://myrecipe30336.herokuapp.com/
@@ -66,12 +73,9 @@ password : bbb123
 - rubocop-auto-correct   (コード整形ツール)
 
 # 課題・実装予定機能
-・課題
-①お気に入りのレシピを保存できる機能がない点
-：いいね機能の実装 により、いいねした他ユーザーの投稿を、ユーザー詳細ページから一覧表示できる機能を追加したいと考えております。
 
-②新規投稿/編集 の画像投稿時、添付画像が表示されない点
-画像プレビュー機能の実装 により、ユーザーの意図した画像を、確実に投稿できるように実装したいと考えております。
+→ 課題としては、新規投稿/編集 の画像投稿時に、添付画像が表示されないことが挙げられます。
+今後、画像プレビュー機能の実装 により、ユーザーの意図した画像を、確実に投稿できるように実装したいと考えております。
 
 # DB設計
   ## usersテーブル
@@ -92,7 +96,7 @@ password : bbb123
 ｜ title      | string     | null: false       |
 ｜ body       | text       | null: false       |
 ｜ user       | references | foreign_key: true |
-｜ category   | integer    | null: false       | ★Active
+｜ category   | integer    | null: false       | ★Active-hash
 
  ### Association
 - belongs_to :user
