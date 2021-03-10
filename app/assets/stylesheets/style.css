@@ -454,6 +454,12 @@ show_tag:before {
   margin-left: -30px;
 }
 
+.list-name{
+  border-bottom: dashed 2px #3b4043;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
 /* フッター */
 
 .footer {
