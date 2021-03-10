@@ -248,6 +248,34 @@ show_tag:before {
   display: none;
 }
 
+/* いいね */
+.like_group{
+  display:flex;
+}
+
+.like_btn{
+  width: 50px;
+  height: 33px;
+}
+
+
+.fa-heart:before {
+  font-size: 20px;
+}
+
+.fa-heart:before {
+  color: #c70909;
+}
+
+.count-number{
+  font-size: 18px;
+}
+
+.post-count-number{
+  margin-left: 5px;
+  margin-top: -1px;
+}
+
 /* 詳細ページ */
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
