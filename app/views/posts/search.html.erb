@@ -16,7 +16,10 @@
               </p>
             </div>
             <%# いいね部分終わり %>
-          <%= link_to "by #{post.user.name}", user_path(post.user_id), class: :card__user %>
+            <div class ="post-bottom">
+              <p class="created"><%= l post.created_at,format: :short %></p>
+              <%= link_to "by #{post.user.name}", user_path(post.user_id), class: :card__user %>
+            </div>
         </div>
       </div>
     <% end %>
