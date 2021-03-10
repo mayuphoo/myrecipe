@@ -1,8 +1,7 @@
 class Post < ApplicationRecord
-
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
-  
+
   belongs_to :user
   has_one_attached :image
   has_many :comments, dependent: :destroy
@@ -14,7 +13,7 @@ class Post < ApplicationRecord
   validates :body, presence: true
   validates :image, presence: true
 
-  validates :category_id, numericality: { other_than: 1 } 
+  validates :category_id, numericality: { other_than: 1 }
 
   def self.search(search)
     if search
@@ -23,5 +22,4 @@ class Post < ApplicationRecord
       Post.all
     end
   end
-
 end

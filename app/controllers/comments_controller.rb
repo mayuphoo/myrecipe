@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     else
       @post = Post.find(@comment.post.id)
       @comments = @post.comments.includes(:user)
-      render "posts/show"
+      render 'posts/show'
     end
   end
 
@@ -15,13 +15,14 @@ class CommentsController < ApplicationController
     comment = @post.comments.find(params[:id])
     if current_user.id == comment.user_id
       comment.destroy
-    redirect_to post_path(params[:post_id])
+      redirect_to post_path(params[:post_id])
     else
-      render "posts/show"
+      render 'posts/show'
     end
   end
 
-private
+  private
+
   def comment_params
     params.require(:comment).permit(:text).merge(user_id: current_user.id, post_id: params[:post_id])
   end

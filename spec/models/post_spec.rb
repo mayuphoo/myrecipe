@@ -34,6 +34,5 @@ RSpec.describe Post, type: :post do
         expect(@post.errors.full_messages).to include('Category is not a number')
       end
     end
-    
   end
 end
