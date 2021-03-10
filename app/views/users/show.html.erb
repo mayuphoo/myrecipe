@@ -1,15 +1,53 @@
-<div class="main">
+<div class="main"> 
   <div class="inner">
     <div class="user__wrapper">
       <h2 class="page-heading">
         <%= "● #{@user.name}さんのページ ●"%>
       </h2>
-      <h2>
-        <%= "#{@user.name}さんの投稿一覧"%>
-      </h3>
-      <div class="user__card">
-        <%= render partial: "posts/post", collection: @posts %>
+
+      <div class="post-card">
+        <h2 class="list-name">
+          <%= "#{@user.name}さんの投稿一覧"%>
+        </h2>
+        <div class="user__card">
+          <%= render partial: "posts/post", collection: @posts %>
+        </div>
       </div>
+
+      <div class="like-card">
+        <h2 class="list-name">
+          <%= "#{@user.name}さんのいいね！一覧"%>
+        </h2>
+        <div class="user__card">
+          <div class="card">          
+            <% @user.liked_posts.each do |post| %>
+                <p class="tag"><%= post.category.name %></p>
+                <%= link_to image_tag(post.image, class: :card__img ), post_path(post.id) %>
+                <div class="card__body">
+                  <%= link_to post.title, post_path(post.id), class: :card__title%>
+
+                <%# いいね部分始まり %>
+                <div class="like_group">
+                  <p class= "heart-icon">
+                    <i class="fas fa-heart"></i>
+                  </p>
+                  <p class="post-count-number">
+                    <%=post.liked_users.count %>
+                  </p>
+                </div>
+                <%# いいね部分終わり %>
+                <div class ="post-bottom">
+                  <p class="created"><%= l post.created_at,format: :short %></p>
+                  <%= link_to "by #{post.user.name}", user_path(post.user_id), class: :card__user %>
+                </div>
+
+
+            <% end %>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
+

@@ -6,7 +6,20 @@
         <%= link_to image_tag(post.image, class: :card__img ), post_path(post.id) %>
         <div class="card__body">
           <%= link_to post.title, post_path(post.id), class: :card__title%>
-          <%= link_to "by #{post.user.name}", user_path(post.user_id), class: :card__user %>
+            <%# いいね部分始まり %>
+            <div class="like_group">
+              <p class= "heart-icon">
+                <i class="fas fa-heart"></i>
+              </p>
+              <p class="post-count-number">
+                <%=post.liked_users.count %>
+              </p>
+            </div>
+            <%# いいね部分終わり %>
+            <div class ="post-bottom">
+              <p class="created"><%= l post.created_at,format: :short %></p>
+              <%= link_to "by #{post.user.name}", user_path(post.user_id), class: :card__user %>
+            </div>
         </div>
       </div>
     <% end %>
