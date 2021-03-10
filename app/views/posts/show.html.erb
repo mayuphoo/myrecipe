@@ -8,7 +8,7 @@
       <% if user_signed_in? && current_user.id == @post.user_id %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_post_path(@post.id), class: :prototype__btn %>
-          <%= link_to "削除する", post_path(@post.id), method: :delete, class: :prototype__btn %>
+          <%= link_to "削除する", post_path(@post.id), method: :delete, class: :prototype__btn, data: {confirm: "削除しますか？"} %>
         </div>
       <% end %>
       <div class="show_tag"><%= @post.category.name %></div>
@@ -76,7 +76,7 @@
                 <p class="comment_created"><%= l comment.created_at,format: :short %></p>
 
                 <%if current_user.id == comment.user.id%>
-                  <%= link_to "削除する", post_comment_path(@post, comment),method: :delete, class: :comment_user %>
+                  <%= link_to "削除する", post_comment_path(@post, comment),method: :delete, class: :comment_user, data: {confirm: "削除しますか？"} %>
                 <% end %>
             </li>
           <% end %>
