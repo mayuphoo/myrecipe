@@ -15,36 +15,37 @@
 # DEMO
 ◎ ユーザー管理機能
 ユーザー登録/ログイン機能/ログアウト機能
-・https://gyazo.com/2b37af0ac84a6ecf8ec1703b63d33b8d (ユーザー登録機能)
-・https://gyazo.com/c718fe37e8ea8d2f5848d629a5acade9 (ログイン機能)
-・https://gyazo.com/ac080b22a3fa3263a613007411683ccb (ログアウト機能)
+https://gyazo.com/9eb24cf2e3713a38bd2f59b1ca687fd1 (ユーザー登録機能)
+https://gyazo.com/52d997d6ee3d525a67b717f5405ed77e (ログイン機能)
+https://gyazo.com/be7d1dbe455b8fcd819e36960d3f9d76 (ログアウト機能)
 
 ◎ レシピ投稿機能
 新規投稿機能/編集機能/詳細表示機能/削除機能
-・https://gyazo.com/38fadff60026ff37e912382096389607 (新規投稿機能)
-・https://gyazo.com/07872c2a52a69bb1e43f53ece44d4188 (編集機能)
-・https://gyazo.com/cc6d9f1f59c7995d9d679725f29bc7c5 (詳細表示機能)
-・https://gyazo.com/bbbad6b3dd7f9d7d6e363b6376ad2ec9 (削除機能)
+https://gyazo.com/5e6777d7da5af863d60df285a29ad576 (新規投稿機能)
+https://gyazo.com/4994afc88537b56a01b9cdd108db606e (詳細表示機能)
+https://gyazo.com/f60fca36a2f65d2d5448ea7126711dc5 (編集機能)
+https://gyazo.com/fcb232469ec0d6d042fcce49e182b07c (削除機能)
 
 ◎ ユーザー詳細機能
 ユーザー詳細ページにて、投稿済みの記事が一覧表示できる
-・https://gyazo.com/6aa8ff2740a3e28edddf713f76a4b6c2
+https://gyazo.com/1a535dd9bdd80c84491f7c5e4dfd2422
 
 ◎ コメント機能
 投稿詳細ページにて、ユーザは自由にコメントができる
-・https://gyazo.com/7542da238e26a72525b7803068ca9743
+https://gyazo.com/34353d35be79b22e23e202a6dd9201e4 (コメント投稿機能)
+https://gyazo.com/22ac664076e98e2a06526bbce9d3bc22（コメント削除機能）
 
 ◎ カテゴリ表示機能
 カテゴリ表示により、ユーザーは容易にレシピ検索ができる
-・https://gyazo.com/b40c848baede9c9946918100d23dc2bd
+https://gyazo.com/4aa52186bec0312d1562fc387723745e
 
 ◎ キーワード検索機能
 検索窓からレシピ名のキーワード検索が可能
-・https://gyazo.com/6355c98bc72bc22f682be6f9dcd7ced2
+https://gyazo.com/ca6269ce94505a464c10b3ac858d31e9
 
-◎いいね！機能
+◎ いいね！機能
 お気に入りの投稿をマイページに保存して、いつでも見返すことができる
-・
+https://gyazo.com/ab681e096c2237139eb01a334ae71291
 
 # 本番環境URL
 https://myrecipe30336.herokuapp.com/
