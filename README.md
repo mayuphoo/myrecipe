@@ -117,10 +117,10 @@ password : bbb123
 
 
   ## likesテーブル 
-｜ Column    | Type       | Option      |
-｜ --------- | ---------  | ----------  |
-｜ user      | references |             |
-｜ post      | references |             |
+| Column    | Type       | Option      |
+| --------- | ---------  | ----------  |
+| user      | references |             |
+| post      | references |             |
  ### Association
 - belongs_to :user
 - belongs_to :post
