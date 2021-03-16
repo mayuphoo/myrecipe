@@ -80,11 +80,11 @@ password : bbb123
 
 # DB設計
   ## usersテーブル
-｜Column|Type|Option|  
-｜---------|-----|-----------|
-｜email|string|null: false|
-｜password|string|null: false|
-｜name|string|null: false|
+|Column|Type|Option|  
+|---------|-----|-----------|
+|email|string|null: false|
+|password|string|null: false|
+|name|string|null: false|
  ### Association
 - has_many :posts
 - has_many :comments
