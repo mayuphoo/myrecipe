@@ -92,12 +92,12 @@ password : bbb123
 
 
   ## postsテーブル 
-｜ Column     | Type       | Option            |
-｜ ---------  | ---------  | ----------        |
-｜ title      | string     | null: false       |
-｜ body       | text       | null: false       |
-｜ user       | references | foreign_key: true |
-｜ category   | integer    | null: false       | ★Active-hash
+| Column     | Type       | Option            |
+ ---------  | ---------  | ----------        |
+| title      | string     | null: false       |
+| body       | text       | null: false       |
+| user       | references | foreign_key: true |
+| category   | integer    | null: false       | ★Active-hash
 
  ### Association
 - belongs_to :user
