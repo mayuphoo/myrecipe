@@ -92,7 +92,7 @@ password : bbb123
 
 
   ## postsテーブル 
-| Column     | Type       | Option            |
+ Column     | Type       | Option            |
  ---------  | ---------  | ----------        |
 | title      | string     | null: false       |
 | body       | text       | null: false       |
@@ -106,11 +106,11 @@ password : bbb123
 
 
   ## commentsテーブル 
-｜ Column    | Type       | Option      |
-｜ --------- | ---------  | ----------  |
-｜ text      | text       | null: false |
-｜ user      | references |             |
-｜ post      | references |             |
+ Column    | Type       | Option      |
+ --------- | ---------  | ----------  |
+| text      | text       | null: false |
+| user      | references |             |
+| post      | references |             |
  ### Association
 - belongs_to :user
 - belongs_to :post
