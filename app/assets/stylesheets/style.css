@@ -140,6 +140,12 @@ a {
   cursor: pointer;
 }
 
+.img-preview{
+  width: 100px;
+}
+
+
+
 /* メイン */
 
 .greeting{
