@@ -48,7 +48,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: myrecipe_production
-  username: myrecipe
-  password: <%= ENV['MYRECIPE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['MYSQL_URL'] %>
