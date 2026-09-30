@@ -48,7 +48,7 @@ https://gyazo.com/ca6269ce94505a464c10b3ac858d31e9
 https://gyazo.com/ab681e096c2237139eb01a334ae71291
 
 # 本番環境URL
-https://myrecipe30336.herokuapp.com/
+https://myrecipe-production.up.railway.app/
 
 # テスト用アカウント
 アカウント①  
