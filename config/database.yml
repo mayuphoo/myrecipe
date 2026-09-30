@@ -49,4 +49,4 @@ test:
 #
 production:
   adapter: mysql2
-  url: <%= ENV['MYSQL_URL'].sub(/\Amysql:/, 'mysql2:') %>
+  url: <%= ENV['MYSQL_URL'].to_s.sub(/\Amysql:/, 'mysql2:') %>

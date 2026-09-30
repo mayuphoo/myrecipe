@@ -279,6 +279,7 @@ show_tag:before {
 /* いいね */
 .like_group{
   display:flex;
+  align-items: center;
 }
 
 .like_btn{
@@ -297,6 +298,8 @@ show_tag:before {
 
 .count-number{
   font-size: 18px;
+  margin-left: 5px;
+  margin-top: 0;
 }
 
 .post-count-number{
