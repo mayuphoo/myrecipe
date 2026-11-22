@@ -15,7 +15,9 @@
 # 本番環境URL
 https://myrecipe-production.up.railway.app/
 
-# ログインアカウント （ログインすると、レシピ・コメントが投稿できるようになります）
+# ログイン用のアカウント 
+ログインすると、レシピ・コメントが投稿できます
+
 アカウント①  
 email : aaa@aaa  
 password : aaa123
