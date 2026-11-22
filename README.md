@@ -12,6 +12,18 @@
 ・料理好きの人々が、レシピサイトを通して繋がれる場を増やすこと。  
 ・レシピの幅が広がるアプリを作ること。
 
+# 本番環境URL
+https://myrecipe-production.up.railway.app/
+
+# ログインアカウント （ログインすると、レシピ・コメントが投稿できるようになります）
+アカウント①  
+email : aaa@aaa  
+password : aaa123
+
+アカウント②  
+email : bbb@bbb  
+password : bbb123
+
 # 実装機能
 ◎ ユーザー管理機能  
  → ユーザー登録/ログイン機能/ログアウト機能  
@@ -33,19 +45,6 @@
 
 ◎ いいね！機能  
  → お気に入りの投稿をマイページに保存して、いつでも見返すことができる  
-
-# 本番環境URL
-https://myrecipe-production.up.railway.app/
-
-# テスト用アカウント
-アカウント①  
-email : aaa@aaa  
-password : aaa123
-
-アカウント②  
-email : bbb@bbb  
-password : bbb123
-
 
 # 工夫したポイント
 ユーザー同士コミュニケーションが取れる、コメント機能を実装した点です。  
